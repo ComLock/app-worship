@@ -1,0 +1,116 @@
+<content-type>
+	<display-name>Service</display-name>
+	<super-type>base:structured</super-type>
+	<is-abstract>false</is-abstract>
+	<is-final>true</is-final>
+	<is-built-in>false</is-built-in>
+	<allow-child-content>true</allow-child-content>
+	<form>
+		<input name="datetime" type="DateTime">
+			<label>DateTime</label>
+			<config>
+				<timezone>true</timezone>
+			</config>
+		</input>
+		<input name="songs" type="ContentSelector">
+			<label>Songs</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>song</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="lead" type="ContentSelector">
+			<label>Lead</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="piano" type="ContentSelector">
+			<label>Piano</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="gitar" type="ContentSelector">
+			<label>Gitar</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="drums" type="ContentSelector">
+			<label>Drums</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="cajon" type="ContentSelector">
+			<label>Cajon</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="soprano" type="ContentSelector">
+			<label>Soprano</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="alto" type="ContentSelector">
+			<label>Alto</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="tenor" type="ContentSelector">
+			<label>Tenor</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+		<input name="bass" type="ContentSelector">
+			<label>Bass</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>person</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+	</form>
+</content-type>

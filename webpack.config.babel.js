@@ -185,6 +185,8 @@ if (SERVER_JS_FILES.length) {
 		],
 		resolve: {
 			alias: {
+				//'@enonic/js-utils': path.resolve(__dirname, '../enonic-js-utils/src/index'), // TypeScript
+				'@enonic/js-utils': path.resolve(__dirname, '../enonic-js-utils/dist/cjs'),
 				myGlobal: path.resolve(__dirname, 'src/main/resources/lib/nashorn/global')
 			},
 			extensions: serverSideExtensions.map((ext) => `.${ext}`),

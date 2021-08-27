@@ -1,0 +1,32 @@
+<content-type>
+	<display-name>Person</display-name>
+	<super-type>base:structured</super-type>
+	<is-abstract>false</is-abstract>
+	<is-final>true</is-final>
+	<is-built-in>false</is-built-in>
+	<allow-child-content>true</allow-child-content>
+	<form>
+		<input name="firstName" type="TextLine">
+			<label>First-name</label>
+		</input>
+		<input name="middleName" type="TextLine">
+			<label>Middle-name</label>
+		</input>
+		<input name="lastName" type="TextLine">
+			<label>Last-name</label>
+		</input>
+		<input name="mobile" type="TextLine">
+			<label>Mobile</label>
+		</input>
+		<input name="roles" type="ContentSelector">
+			<label>Role(s)</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<allowContentType>role</allowContentType>
+				<allowPath>${site}</allowPath>
+				<treeMode>false</treeMode>
+				<hideToggleIcon>true</hideToggleIcon>
+			</config>
+		</input>
+	</form>
+</content-type>
