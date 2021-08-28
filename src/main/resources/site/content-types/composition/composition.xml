@@ -1,0 +1,17 @@
+<content-type>
+	<display-name>Composition</display-name>
+	<super-type>base:structured</super-type>
+	<is-abstract>false</is-abstract>
+	<is-final>true</is-final>
+	<is-built-in>false</is-built-in>
+	<allow-child-content>true</allow-child-content>
+	<form>
+		<item-set name="songSections">
+			<label>Song sections</label>
+			<occurrences minimum="1" maximum="0"/>
+			<items>
+				<mixin name="songSection"/>
+			</items>
+		</item-set>
+	</form>
+</content-type>

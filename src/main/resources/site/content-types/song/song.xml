@@ -1,16 +1,30 @@
 <content-type>
-  <display-name>Song</display-name>
-  <super-type>base:structured</super-type>
-  <is-abstract>false</is-abstract>
-  <is-final>true</is-final>
-  <is-built-in>false</is-built-in>
-  <allow-child-content>true</allow-child-content>
-  <form>
-    <input name="title" type="TextLine">
-      <label>Title</label>
-    </input>
-    <input name="artist" type="TextLine">
-      <label>Artist</label>
-    </input>
-  </form>
+	<display-name>Song</display-name>
+	<super-type>base:structured</super-type>
+	<is-abstract>false</is-abstract>
+	<is-final>true</is-final>
+	<is-built-in>false</is-built-in>
+	<allow-child-content>true</allow-child-content>
+	<form>
+		<input name="title" type="TextLine">
+			<label>Title</label>
+		</input>
+		<input name="artist" type="TextLine">
+			<label>Artist</label>
+		</input>
+		<item-set name="parts">
+			<label>Song section</label>
+			<occurrences minimum="0" maximum="0"/>
+			<items>
+				<mixin name="songSection"/>
+				<input name="lyrics" type="HtmlArea">
+					<label>Lyrics</label>
+					<config>
+						<exclude>*</exclude>
+						<include>Superscript</include>
+					</config>
+				</input>
+			</items>
+		</item-set>
+	</form>
 </content-type>

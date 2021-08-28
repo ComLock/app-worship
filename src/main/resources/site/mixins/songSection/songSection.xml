@@ -1,0 +1,20 @@
+<mixin>
+	<display-name>Song section</display-name>
+	<form>
+		<input name="songSection" type="ComboBox">
+			<label>Song section</label>
+			<occurrences minimum="1" maximum="1"/>
+			<config>
+				<option value="verse1">Verse 1</option>
+				<option value="verse2">Verse 2</option>
+				<option value="verse3">Verse 3</option>
+				<option value="verse4">Verse 4</option>
+				<option value="chorus">Chorus</option>
+				<option value="bridge">Bridge</option>
+				<option value="preChorus">Pre-chorus</option>
+				<option value="intro">Intro</option>
+				<option value="outro">Outro</option>
+			</config>
+		</input>
+	</form>
+</mixin>
