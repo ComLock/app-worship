@@ -1,6 +1,7 @@
 {
   "author": "Christian Andreas Westgaard <comlock@gmail.com>",
   "dependencies": {
+    "@enonic/js-utils": "^0.0.1",
     "render-js": "^1.29.0"
   },
   "devDependencies": {
