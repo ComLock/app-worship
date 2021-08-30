@@ -67,8 +67,8 @@ export function get() {
 		//log.info(`roles:${toStr(roles)}`);
 		roles.forEach(({
 			roles: roleIds = [],
-			annotation = []
-		}) => { // TODO annotation -> annotations
+			annotations = []
+		}) => {
 			roleIds = forceArray(roleIds);
 			roleIds.forEach((roleId) => {
 				if (!roleIdToDisplayName[roleId]) {
@@ -85,8 +85,8 @@ export function get() {
 			//log.info(`l:${toStr(l)}`);
 
 			//log.info(`annotation:${toStr(annotation)}`);
-			annotation = forceArray(annotation);
-			annotation.forEach((a) => {
+			annotations = forceArray(annotations);
+			annotations.forEach((a) => {
 				//log.info(`a:${toStr(a)}`);
 				const position = a.substring(0, a.indexOf(' '));
 				//log.info(`position:${toStr(position)}`);
