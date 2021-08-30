@@ -17,14 +17,71 @@
 			<occurrences minimum="0" maximum="0"/>
 			<items>
 				<mixin name="songSection"/>
-				<input name="lyrics" type="HtmlArea">
+				<!--input name="lyrics" type="HtmlArea">
 					<label>Lyrics</label>
 					<config>
 						<exclude>*</exclude>
 						<include>Superscript</include>
 					</config>
+				</input-->
+				<input name="lines" type="TextLine">
+					<occurrences minimum="0" maximum="0"/>
+					<label>Line(s)</label>
+					<config>
+						<show-counter>true</show-counter>
+					</config>
 				</input>
+
+				<item-set name="roles">
+					<label>Role(s)</label>
+					<occurrences minimum="0" maximum="0"/>
+					<items>
+						<input name="roles" type="ContentSelector">
+							<label>Role(s)</label>
+							<occurrences minimum="1" maximum="0"/>
+							<config>
+								<allowContentType>role</allowContentType>
+								<allowPath>${site}</allowPath>
+								<treeMode>false</treeMode>
+								<hideToggleIcon>true</hideToggleIcon>
+							</config>
+						</input>
+						<input name="annotations" type="TextLine">
+							<label>Annotation(s)</label>
+							<occurrences minimum="1" maximum="0"/>
+							<config>
+								<regexp>\d{1,2}:\d{1,2} .*?</regexp>
+							</config>
+						</input>
+						<!--item-set name="annotations">
+							<label>Annotation(s)</label>
+							<occurrences minimum="1" maximum="0"/>
+							<items>
+								<input name="line" type="Long">
+  									<label>Line</label>
+									<occurrences minimum="1" maximum="1"/>
+									<default>1</default>
+									<config>
+										<min>1</min>
+									</config>
+								</input>
+								<input name="column" type="Long">
+  									<label>Column</label>
+									<occurrences minimum="1" maximum="1"/>
+									<default>1</default>
+									<config>
+										<min>1</min>
+									</config>
+								</input>
+								<input name="annotation" type="TextLine">
+									<label>Annotation</label>
+									<occurrences minimum="1" maximum="1"/>
+								</input>
+							</items>
+						</item-set--> <!-- annotations -->
+					</items>
+				</item-set><!-- roles -->
 			</items>
-		</item-set>
+		</item-set><!-- parts -->
 	</form>
 </content-type>
